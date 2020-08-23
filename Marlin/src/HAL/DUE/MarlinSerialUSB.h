@@ -16,7 +16,7 @@
  * GNU General Public License for more details.
  *
  * You should have received a copy of the GNU General Public License
- * along with this program.  If not, see <https://www.gnu.org/licenses/>.
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  *
  */
 #pragma once
@@ -28,7 +28,7 @@
 
 #include "../../inc/MarlinConfig.h"
 
-#if HAS_USB_SERIAL
+#if SERIAL_PORT == -1
 
 #include <WString.h>
 
@@ -88,12 +88,6 @@ private:
   static void printFloat(double, uint8_t);
 };
 
-#if SERIAL_PORT == -1
-  extern MarlinSerialUSB customizedSerial1;
-#endif
+extern MarlinSerialUSB customizedSerial1;
 
-#if SERIAL_PORT_2 == -1
-  extern MarlinSerialUSB customizedSerial2;
-#endif
-
-#endif // HAS_USB_SERIAL
+#endif // SERIAL_PORT == -1
