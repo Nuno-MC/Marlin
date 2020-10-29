@@ -1134,7 +1134,7 @@
 #define X_MIN_POS -5
 #define Y_MIN_POS -1
 #define Z_MIN_POS 0
-#define X_MAX_POS 255
+#define X_MAX_POS 250
 #define Y_MAX_POS 238
 #define Z_MAX_POS 250
 
