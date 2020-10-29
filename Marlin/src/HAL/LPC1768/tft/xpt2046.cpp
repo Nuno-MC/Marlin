@@ -72,7 +72,10 @@ bool XPT2046::getRawPoint(int16_t *x, int16_t *y) {
   if (!isTouched()) return false;
   *x = getRawData(XPT2046_X);
   *y = getRawData(XPT2046_Y);
+<<<<<<< HEAD
   SERIAL_ECHOLNPAIR("X: ", *x, ", Y: ", *y);
+=======
+>>>>>>> bugfix-2.0.x
   return isTouched();
 }
 
